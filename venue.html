@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rickhouse — Venue</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Josefin+Sans:wght@300;400;600&family=Great+Vibes&family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-nav">
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="story.html">Our Story</a></li>
+            <li><a href="venue.html" class="active">Venue</a></li>
+            <li><a href="travel.html">Travel</a></li>
+            <li><a href="attire.html">Attire</a></li>
+            <li><a href="rsvp.html">RSVP</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="venue-section">
+            <div class="venue-bg"></div>
+            <div class="container">
+                <div class="section-header">
+                <span class="deco-diamond">◆</span>
+                    <h2 class="section-title light">Venue</h2>
+                <span class="deco-diamond">◆</span>
+                </div>
+                <div class="venue-content venue-page-content">
+                    <div class="venue-info">
+                        <div class="venue-location-block">
+                            <p class="venue-label">Ceremony</p>
+                            <h3>Location TBD</h3>
+                        </div>
+                        <div class="venue-location-block reception-location">
+                            <p class="venue-label">Reception</p>
+                            <h3><a href="https://www.rickhousedurham.com" target="_blank" rel="noopener noreferrer">The Rickhouse</a></h3>
+                            <p class="venue-address">
+                                Downtown Durham<br>
+                                Durham, North Carolina
+                            </p>
+                        </div>
+                        <figure class="venue-photo">
+                            <img src="photos/rickhouse-wedding.jpg" alt="The Rickhouse reception space with string lights, wood ceilings, and wedding decor">
+                        </figure>
+                        <p class="venue-description">The Rickhouse is an industrial-chic event space in the heart of downtown Durham that overlooks the famed Durham Athletic Park, original home of the Durham Bulls. Once a marketplace where tobacco vendors sold to cigarette companies, it remains a piece of Durham history and a reminder of the industry that helped shape the economy of Durham and North Carolina. With exposed brick, reclaimed wood accents, and warm, intimate lighting, it offers a relaxed yet elegant setting that feels like home — perfect for celebrating with family and friends.</p>
+                        <div class="venue-arrival">
+                            <h4>Getting There</h4>
+                            <p>Parking at The Rickhouse is limited. We recommend using nearby public parking decks or rideshare services when possible.</p>
+                        </div>
+                        <div class="venue-actions">
+                            <a href="https://maps.app.goo.gl/2pAX9ZvqbxB7vnJ59" class="btn btn-outline" target="_blank" rel="noopener noreferrer">View Map</a>
+                            <a href="https://www.rickhousedurham.com/parking" class="btn btn-outline" target="_blank" rel="noopener noreferrer">See Parking</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-film-strip"></div>
+            <div class="hollywood-stars">✦ ✦ ✦</div>
+            <p class="footer-tagline">And they lived happily ever after...</p>
+            <p class="footer-names">Tim <span class="ampersand">&amp;</span> Stacy</p>
+            <p class="footer-date">07/17/27</p>
+            <div class="art-deco-divider">
+                <span class="deco-line"></span>
+                <span class="deco-diamond">◆</span>
+                <span class="deco-line"></span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation background on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('.main-nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

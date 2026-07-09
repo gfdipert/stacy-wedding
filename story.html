@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Josefin+Sans:wght@300;400;600&family=Great+Vibes&family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-nav story-page">
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="story.html" class="active">Our Story</a></li>
+            <li><a href="venue.html">Venue</a></li>
+            <li><a href="travel.html">Travel</a></li>
+            <li><a href="attire.html">Attire</a></li>
+            <li><a href="rsvp.html">RSVP</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="venue-section story-section">
+            <div class="venue-bg"></div>
+            <div class="container">
+                <div class="section-header">
+                <span class="deco-diamond">◆</span>
+                    <h2 class="section-title light">Our Story</h2>
+                <span class="deco-diamond">◆</span>
+                </div>
+                <div class="story-image-top">
+                    <div class="image-frame landscape">
+                        <img src="photos/stacyandtimoutsidezoomedout.png" alt="Couple photo" class="story-photo">
+                        <div class="frame-corner tl"></div>
+                        <div class="frame-corner tr"></div>
+                        <div class="frame-corner bl"></div>
+                        <div class="frame-corner br"></div>
+                    </div>
+                </div>
+                <div class="story-text">
+                    <p>Tim and Stacy’s story began with a first date at Ponysaurus in Durham. There were a lot of laughs, great conversation, and a shared feeling that this might be something special. Immediately after, Tim got the flu. Stacy assumed this was an excuse and that she might never hear from him again. As it turns out, he really was just sick, and two weeks later, once Tim had recovered, date number two finally happened. The rest of their story took off from there.</p>
+
+                    <p>They spent lots of time doing what they enjoyed most together: Durham Bulls games, Duke football events, and working their way through a hefty list of restaurants and breweries. Travel quickly became a favorite, especially their annual trips to Wilmington for Tim’s conference and dressing up for the Jingle Ball in Raleigh, which always felt a little extra and a lot of fun.</p>
+
+                    <p>In December of 2025, Tim spoke with Stacy’s dad and made a plan to propose at a winery near her parents’ home. Unaware of what was coming, Stacy invited her brother Jon to join the winery visit, unintentionally changing the plan. With a New Year’s trip to visit Tim’s family in Milwaukee already scheduled, Tim decided that would be the moment instead.</p>
+
+                    <p>Plans changed once again at RDU when their flight to Milwaukee was delayed twice. Not wanting to wait any longer, Tim proposed in a quiet back booth of one of the airport restaurants. “I wasn’t going to do this here,” he said, before getting down on one knee. Stacy replied, “Do what?”—and then said yes.</p>
+
+                    <p>They were later upgraded to first class on their flight to Milwaukee, which felt like a fitting start to their next chapter. They’re excited to celebrate with the people who’ve been part of the journey all along.</p>
+                </div>
+            </div>
+            <div class="tidbits">
+                <h3 class="section-title small">Tidbits</h3>
+                <ul class="tidbits-list">
+                    <li><strong>Who made the first move?</strong> <span>Tim</span></li>
+                    <li><strong>What was your most memorable date?</strong> <span>A boat tour in Wilmington</span></li>
+                    <li><strong>What's your favorite activity together?</strong> <span>Walking into downtown Durham and visiting Crank Arm Brewery</span></li>
+                    <li><strong>Who's going to take out the trash?</strong> <span>Tim, he’s a natural</span></li>
+                    <li><strong>Where was the best meal you have eaten together?</strong> <span>Angus Barn, Tim’s first visit</span></li>
+                    <li><strong>What's the most memorable trip you have taken together?</strong> <span>Wisconsin in arctic weather conditions</span></li>
+                    <li><strong>We’re on the same page about:</strong> <span>not living in the suburbs</span></li>
+                    <li><strong>The dorkiest thing about us is:</strong> <span>Tim's YouTube channel, featuring Stacy</span></li>
+                    <li><strong>A social cause we care about:</strong> <span>Education. We both have masters degrees and value our education experiences.</span></li>
+                    <li><strong>We are regulars at:</strong> <span>Duke Football Games</span></li>
+                    <li><strong>Where are you going for your honeymoon?</strong> <span>Quebec and Montreal.</span></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-film-strip"></div>
+            <div class="hollywood-stars">✦ ✦ ✦</div>
+            <p class="footer-tagline">And they lived happily ever after...</p>
+            <p class="footer-names">Tim <span class="ampersand">&amp;</span> Stacy</p>
+            <p class="footer-date">07/17/27</p>
+            <div class="art-deco-divider">
+                <span class="deco-line"></span>
+                <span class="deco-diamond">◆</span>
+                <span class="deco-line"></span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation background on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('.main-nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

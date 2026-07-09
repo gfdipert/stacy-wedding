@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Josefin+Sans:wght@300;400;600&family=Great+Vibes&family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-nav">
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="story.html">Our Story</a></li>
+            <li><a href="venue.html">Venue</a></li>
+            <li><a href="travel.html" class="active">Travel</a></li>
+            <li><a href="attire.html">Attire</a></li>
+            <li><a href="rsvp.html">RSVP</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="venue-section travel-section">
+            <div class="venue-bg"></div>
+            <div class="container">
+                <div class="section-header">
+                <span class="deco-diamond">◆</span>
+                    <h2 class="section-title light">Travel</h2>
+                <span class="deco-diamond">◆</span>
+                </div>
+                <p class="travel-intro">Everything you need to plan your trip to Durham.</p>
+                <div class="travel-content">
+                    <div class="travel-card feature room-blocks">
+                        <h4>Room Blocks</h4>
+                        <p>We'll be reserving room blocks at two hotels in Downtown Durham for our guests. Details will be made available soon.</p>
+                        <div class="feature-links">
+                            <a href="https://www.hyatt.com/jdv-by-hyatt/en-US/rdujd-unscripted-durham" class="btn btn-outline" target="_blank" rel="noopener noreferrer">The Unscripted</a>
+                            <a href="https://www.marriott.com/en-us/hotels/rducv-durham-marriott-city-center/overview/" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Center City Marriott</a>
+                        </div>
+                    </div>
+                    <div class="travel-card feature other-stays">
+                        <h4>Other Stays</h4>
+                        <p>Guests are welcome to stay wherever feels most comfortable or convenient. Downtown Durham has several hotels and short-term rentals close to the reception.</p>
+                        <div class="feature-links">
+                            <a href="https://downtowndurham.com/hotels/" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Browse Hotels</a>
+                            <a href="https://www.airbnb.com/a/stays/Durham--North-Carolina--United-States" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Browse Airbnb</a>
+                        </div>
+                    </div>
+                    <div class="travel-card feature transportation">
+                        <h4>Getting Around</h4>
+                        <p>If you're staying downtown, we recommend walking or using Uber or Lyft to get to and from the reception. <strong>Parking at The Rickhouse is limited</strong>, and rideshare is often the easiest option for out-of-town guests.</p>
+                        <p>A rental car is not necessary for guests staying downtown, though it may be helpful if you plan to explore the Triangle or stay outside Durham.</p>
+                        <div class="feature-links">
+                            <a href="https://www.rickhousedurham.com/parking" class="btn btn-outline" target="_blank" rel="noopener noreferrer">PARKING AT THE RICKHOUSE</a>
+                        </div>
+                    </div>
+                    <div class="travel-card feature airport">
+                        <h4>Airport</h4>
+                        <p>Most guests flying in should use Raleigh-Durham International Airport (RDU), approximately 20 minutes from downtown Durham.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-film-strip"></div>
+            <div class="hollywood-stars">✦ ✦ ✦</div>
+            <p class="footer-tagline">And they lived happily ever after...</p>
+            <p class="footer-names">Tim <span class="ampersand">&amp;</span> Stacy</p>
+            <p class="footer-date">07/17/27</p>
+            <div class="art-deco-divider">
+                <span class="deco-line"></span>
+                <span class="deco-diamond">◆</span>
+                <span class="deco-line"></span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation background on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('.main-nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

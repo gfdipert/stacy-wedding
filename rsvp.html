@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSVP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Josefin+Sans:wght@300;400;600&family=Great+Vibes&family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-nav">
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="story.html">Our Story</a></li>
+            <li><a href="venue.html">Venue</a></li>
+            <li><a href="travel.html">Travel</a></li>
+            <li><a href="attire.html">Attire</a></li>
+            <li><a href="rsvp.html" class="active">RSVP</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="rsvp-section">
+            <div class="container">
+                <div class="section-header">
+                <span class="deco-diamond">◆</span>
+                    <h2 class="section-title light">RSVP</h2>
+                <span class="deco-diamond">◆</span>
+                </div>
+                <div class="rsvp-card">
+                    <div class="rsvp-card-deco">✦</div>
+                    <p class="rsvp-intro">Invitations will be mailed later this year once more details are finalized.</p>
+                    <p class="rsvp-intro">RSVP instructions will be included with your invitation. Please follow them to confirm your attendance.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-film-strip"></div>
+            <div class="hollywood-stars">✦ ✦ ✦</div>
+            <p class="footer-tagline">And they lived happily ever after...</p>
+            <p class="footer-names">Tim <span class="ampersand">&amp;</span> Stacy</p>
+            <p class="footer-date">07/17/27</p>
+            <div class="art-deco-divider">
+                <span class="deco-line"></span>
+                <span class="deco-diamond">◆</span>
+                <span class="deco-line"></span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation background on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('.main-nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
