@@ -1205,6 +1205,160 @@ h1, h2, h3, h4 {
     justify-content: center;
 }
 
+/* Explore Durham */
+.durham-section {
+    padding-top: 8.5rem;
+}
+
+.durham-section .section-header {
+    align-items: center;
+}
+
+.durham-section .section-title {
+    font-size: clamp(2rem, 4.5vw, 3.5rem);
+    text-align: center;
+}
+
+.durham-intro {
+    max-width: 760px;
+    margin: -1rem auto 3.5rem;
+    color: var(--linen);
+    font-size: 1.1rem;
+    line-height: 1.9;
+    text-align: center;
+}
+
+.durham-grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.durham-card {
+    position: relative;
+    display: flex;
+    min-height: 330px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2.5rem;
+    overflow: hidden;
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    background: linear-gradient(145deg, rgba(13, 32, 67, 0.9), rgba(1, 6, 9, 0.78));
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.durham-card::after {
+    content: '';
+    position: absolute;
+    right: -45px;
+    bottom: -45px;
+    width: 120px;
+    height: 120px;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    transform: rotate(45deg);
+}
+
+.durham-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(212, 175, 55, 0.7);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.durham-card-number {
+    position: absolute;
+    top: 1.6rem;
+    right: 1.8rem;
+    color: rgba(212, 175, 55, 0.3);
+    font-family: var(--font-display);
+    font-size: 2rem;
+}
+
+.durham-card-kicker {
+    margin-bottom: 0.65rem;
+    color: var(--gold);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.durham-card h2 {
+    max-width: 85%;
+    margin-bottom: 1.1rem;
+    color: var(--ivory);
+    font-size: 1.45rem;
+    line-height: 1.35;
+}
+
+.durham-card > p:not(.durham-card-kicker) {
+    margin-bottom: 1.5rem;
+    color: var(--linen);
+    font-size: 0.95rem;
+    line-height: 1.75;
+}
+
+.durham-link {
+    position: relative;
+    z-index: 1;
+    margin-top: auto;
+    color: var(--gold-light);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.durham-link span {
+    display: inline-block;
+    margin-left: 0.35rem;
+    transition: transform 0.25s ease;
+}
+
+.durham-link:hover span {
+    transform: translateX(4px);
+}
+
+.durham-more {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 1.5rem;
+    align-items: center;
+    max-width: 1000px;
+    margin: 2rem auto 0;
+    padding: 2rem 2.25rem;
+    border: 1px solid rgba(212, 175, 55, 0.45);
+    background: rgba(114, 47, 55, 0.14);
+}
+
+.durham-more-star {
+    color: var(--gold);
+    font-size: 1.6rem;
+}
+
+.durham-more h2 {
+    margin-bottom: 0.25rem;
+    color: var(--ivory);
+    font-size: 1.2rem;
+}
+
+.durham-more p {
+    color: var(--linen);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.durham-more .btn {
+    white-space: nowrap;
+}
+
 @media (max-width: 520px) {
     .feature .feature-links { justify-content: center; }
 
@@ -1215,6 +1369,26 @@ h1, h2, h3, h4 {
 
     .travel-card.feature {
         padding: 1.75rem 1.25rem;
+    }
+}
+
+@media (max-width: 760px) {
+    .durham-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .durham-card {
+        min-height: 0;
+        padding: 2rem 1.5rem;
+    }
+
+    .durham-more {
+        grid-template-columns: auto 1fr;
+    }
+
+    .durham-more .btn {
+        grid-column: 1 / -1;
+        text-align: center;
     }
 }
 
