@@ -13,7 +13,7 @@
         <div class="password-gate-card" role="dialog" aria-modal="true" aria-labelledby="password-gate-title">
             <p class="password-gate-kicker">Tim &amp; Stacy</p>
             <h1 id="password-gate-title">Our celebration is coming soon</h1>
-            <p>This site is currently private. Please enter the shared password to continue.</p>
+            <p>This site is currently private. Please enter the password to continue.</p>
             <form class="password-gate-form">
                 <label for="wedding-password">Password</label>
                 <div class="password-gate-entry">
