@@ -1252,6 +1252,38 @@ h1, h2, h3, h4 {
     transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+.durham-card-photo {
+    position: relative;
+    width: calc(100% + 5rem);
+    height: 190px;
+    margin: -2.5rem -2.5rem 2rem;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.35);
+    background: var(--sapphire-dark);
+}
+
+.durham-card-photo::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 55%, rgba(1, 6, 9, 0.42));
+    pointer-events: none;
+}
+
+.durham-card-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(0.82) contrast(1.04);
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.durham-card:hover .durham-card-photo img {
+    transform: scale(1.035);
+    filter: saturate(1) contrast(1.04);
+}
+
 .durham-card::after {
     content: '';
     position: absolute;
@@ -1273,7 +1305,9 @@ h1, h2, h3, h4 {
     position: absolute;
     top: 1.6rem;
     right: 1.8rem;
-    color: rgba(212, 175, 55, 0.3);
+    padding: 0.15rem 0.55rem;
+    color: var(--gold-light);
+    background: rgba(1, 6, 9, 0.72);
     font-family: var(--font-display);
     font-size: 2rem;
 }
@@ -1380,6 +1414,12 @@ h1, h2, h3, h4 {
     .durham-card {
         min-height: 0;
         padding: 2rem 1.5rem;
+    }
+
+    .durham-card-photo {
+        width: calc(100% + 3rem);
+        height: 175px;
+        margin: -2rem -1.5rem 1.75rem;
     }
 
     .durham-more {
