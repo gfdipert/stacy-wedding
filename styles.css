@@ -2543,6 +2543,108 @@ body.lightbox-open {
     }
 }
 
+/* Compact mobile navigation */
+.nav-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .main-nav,
+    .main-nav.scrolled {
+        min-height: 58px;
+        padding: 0.65rem 1rem;
+        justify-content: flex-end;
+        background: rgba(5, 24, 38, 0.96);
+        backdrop-filter: blur(12px);
+        box-shadow: 0 3px 18px rgba(1, 6, 9, 0.28);
+    }
+
+    .nav-toggle {
+        display: grid;
+        grid-template-columns: 20px auto;
+        align-items: center;
+        column-gap: 0.6rem;
+        width: auto;
+        min-height: 38px;
+        padding: 0.45rem 0.75rem;
+        color: var(--ivory);
+        border: 1px solid rgba(212, 175, 55, 0.7);
+        background: rgba(255, 255, 255, 0.03);
+        font-family: var(--font-sans);
+        font-size: 0.72rem;
+        font-weight: 600;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    .nav-toggle > span:not(.nav-toggle-label) {
+        grid-column: 1;
+        width: 20px;
+        height: 1px;
+        margin: 2px 0;
+        background: var(--gold-light);
+        transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .nav-toggle > span:nth-child(1) { grid-row: 1; align-self: end; }
+    .nav-toggle > span:nth-child(2) { grid-row: 2; }
+    .nav-toggle > span:nth-child(3) { grid-row: 3; align-self: start; }
+
+    .nav-toggle-label {
+        grid-column: 2;
+        grid-row: 1 / span 3;
+    }
+
+    .main-nav.nav-open .nav-toggle > span:nth-child(1) {
+        transform: translateY(5px) rotate(45deg);
+    }
+
+    .main-nav.nav-open .nav-toggle > span:nth-child(2) { opacity: 0; }
+
+    .main-nav.nav-open .nav-toggle > span:nth-child(3) {
+        transform: translateY(-5px) rotate(-45deg);
+    }
+
+    .main-nav ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: none;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0;
+        padding: 0.6rem 1rem 1rem;
+        background: rgba(5, 24, 38, 0.98);
+        border-bottom: 1px solid rgba(212, 175, 55, 0.45);
+        box-shadow: 0 12px 24px rgba(1, 6, 9, 0.34);
+    }
+
+    .main-nav.nav-open ul { display: grid; }
+
+    .main-nav li { text-align: center; }
+
+    .main-nav a {
+        display: block;
+        padding: 0.75rem 0.4rem;
+        font-size: 0.7rem;
+        letter-spacing: 0.14em;
+    }
+
+    .main-nav a::before,
+    .main-nav a::after { display: none; }
+
+    .hero-content {
+        padding-top: 5.5rem;
+        transform: none;
+    }
+
+    .hollywood-stars {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+}
+
 /* Animations */
 @keyframes fadeInUp {
     from {
